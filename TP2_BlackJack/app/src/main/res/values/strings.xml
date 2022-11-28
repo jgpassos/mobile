@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BLACKJACK</string>
+    <string name="regras">
+        - Cada jogador receberá 2 cartas iniciais.
+        - As cartas sorteadas não se repetirão.
+        - As cartas são divididas em quatro naipes (Ouro, Paus, Copas, Espadas).
+        - O jogador pode solicitar nova carta ou optar por parar.
+        - Caso o jogador tenha um score menor que 16, ele deverá continuar solicitando cartas.
+        - Caso o score sejá superior à 21, ele está fora do jogo.
+        - O jogador que possuir a maior pontuação que não ultrapasse 21 será o vencedor.
+        - O placar consiste na soma das cartas.
+    </string>
+</resources>

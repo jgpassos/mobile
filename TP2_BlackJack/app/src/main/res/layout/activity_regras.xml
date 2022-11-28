@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_geral"
+    tools:context=".RegrasActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/bj_logo" />
+
+    <!-- Linear layout onde exibe o texto com as regras na tela -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp" >
+
+        <TextView
+            android:id="@+id/textView_regras"
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:text="@string/regras"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <!-- Botão para iniciar a partida a partir desta tela -->
+
+    <Button
+        android:id="@+id/button_jogar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#FFF9ECBF"
+        android:text="JOGAR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:onClick="telaJogar2"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

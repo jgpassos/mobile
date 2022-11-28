@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_geral"
+    tools:context=".JogoActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/bj_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- linear layout contendo a identificação dos jogadores -->
+
+        <TextView
+            android:id="@+id/textViewJogador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="VOCÊ"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewMaquina1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="JOGADOR 1"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewMaquina2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="JOGADOR 2"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewMaquina3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="JOGADOR 3"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- linear layout contendo a representação das últimas cartas tiradas pelos jogadores -->
+
+        <ImageView
+            android:id="@+id/sua_carta"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/carta_maquina1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/carta_maquina2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/carta_maquina3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/a">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- linear layout contendo a soma total de cada jogador até o momento -->
+
+        <TextView
+            android:id="@+id/seu_placar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/placar_maquina1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/placar_maquina2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/placar_maquina3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- linear layout contendo a carta que estará sendo sorteada -->
+
+        <ImageView
+            android:id="@+id/carta_sorteada"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- linear layout contendo os botões de sortear e passar a vez -->
+        <!-- a visibilidade dos botões serão manipuladas de acordo com as regras do jogo -->
+
+        <Button
+            android:id="@+id/button_sortear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:text="SORTEAR"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/button_passarvez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PASSAR A VEZ"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
