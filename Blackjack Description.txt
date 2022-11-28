@@ -1,0 +1,56 @@
+REF 1: O aplicativo deve distribuir inicialmente duas (2) cartas para cada um dos jogadores 
+(humano e "simulados").
+- As cartas sorteadas não podem se repetir (em uma partida, uma mesma carta não pode 
+aparecer mais de uma vez)
+- As cartas são divididas em quatro naipes (Ouro, Paus, Copas, Espadas)
+- O valor de cada carta varia de 1 a 10 
+
+ A --> 1
+ 2 --> 2
+ 3 --> 3
+ 4 --> 4
+ . . .
+ 9 --> 9
+ Q --> 10
+ J --> 10
+ K --> 10
+
+ REF 2: O aplicativo deve permitir que o jogador escolha entre solicitar uma nova carta, ou 
+"parar" a sua vez e passar para o jogador seguinte.
+o Caso o jogador tenha escolhido solicitar uma nova carta, uma nova carta aleatória (não 
+repetida) deve ser entregue ao jogador, e o valor desta carta deve ser acrescido ao seu 
+score da partida. Ex:
+ Jogador possui inicialmente duas cartas (Q de ouros E 4 de copas)
+ Jogador recebe uma nova carta (5 de Paus)
+ Jogador possui score da rodada igual a 19 (10 + 4 + 5)
+o Caso o jogador tenha um score da partida menor que 16, este jogador será obrigado a 
+solicitar uma nova carta. Neste caso, o botão parar, deverá ser desabilitado.
+
+- Caso o score do jogador atinja um valor superior a 21, este estará fora da partida. Uma 
+mensagem indicando o ocorrido ("estouro") deve ser apresentada para o mesmo
+- Cada nova carta solicitada pelos jogadores deverá ser exposta para todos os 
+participantes.
+
+ REF 3: O aplicativo deverá simular as ações dos jogadores "controlados" pelo computador 
+(adversários de Seu José)
+- A ação de sortear ou parar deverá ser aleatória com igual probabilidade entre elas.
+- As mesmas regras aplicadas para o jogador humano, deverão ser aplicadas para os 
+jogadores simulados.
+
+ REF 4: O aplicativo deverá avaliar ao final da jogada dos quatro jogadores quem foi o vencedor. 
+Para tal, o jogador que possuir a maior pontuação que não ultrapasse 21, será considerado o 
+vencedor.
+- Caso mais de um jogador possua no momento da contabilização dos resultados, tenham 
+- mesmo score, deverá ser indicado empate da partida.
+- Caso todos os jogadores possuam score maior que 21, deverá ser considerado empate 
+da partida.
+
+ REF 5: O aplicativo deverá sortear, a ordem de jogada de cada um dos participantes. Exemplos:
+- cpu2, Seu José, cpu1, cpu3
+- cpu3, cpu2, Seu José, cpu1
+
+ REF 6: Durante a partida, o aplicativo deverá apresentar os quatro placares parciais de cada 
+jogador. O placar parcial consiste na soma das cartas solicitadas, com exceção das duas 
+primeiras cartas distribuídas no início da partida.
+o Ao final da partida (depois de todos os jogadores realizarem suas jogadas), o aplicativo 
+deverá mostrar o placar final de todos os jogadores (soma de TODAS as cartas).
