@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tpfinal_biblioteca.ui.todos.TodosOsTitulosFragment"
+        android:label="@string/menu_todos"
+        tools:layout="@layout/fragment_todos_titulos" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.tpfinal_biblioteca.ui.documentosHistoricos.DocumentosHistoricosFragment"
+        android:label="@string/menu_documentos_historicos"
+        tools:layout="@layout/fragment_documentos_historicos" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.tpfinal_biblioteca.ui.romance.RomanceFragment"
+        android:label="@string/menu_romance"
+        tools:layout="@layout/fragment_romance" />
+</navigation>
